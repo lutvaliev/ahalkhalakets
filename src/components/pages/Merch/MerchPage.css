@@ -1,0 +1,17 @@
+
+.merch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 3px; }
+.merch-card { background: var(--smoke); border: 1px solid rgba(139,0,0,0.08); overflow: hidden; transition: all 0.4s; }
+.merch-card:hover { border-color: rgba(139,0,0,0.25); transform: translateY(-3px); }
+.merch-img { height: 300px; background: linear-gradient(135deg, rgba(139,0,0,0.08) 0%, #111 100%); display: flex; align-items: center; justify-content: center; position: relative; }
+.merch-img img{width: 100%;height: 100%; object-fit: cover;}
+.merch-img.gold { background: linear-gradient(135deg, rgba(201,168,76,0.1) 0%, #111 100%); }
+.merch-sym { font-family: 'Cinzel Decorative', serif; font-size: 4.5rem; color: rgba(139,0,0,0.1); }
+.merch-img.gold .merch-sym { color: rgba(201,168,76,0.15); }
+.merch-badge { position: absolute; top: 14px; right: 14px; font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.3em; background: var(--blood); color: var(--light); padding: 4px 10px; }
+.merch-body { padding: 26px; }
+.merch-name { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--light); margin-bottom: 8px; }
+.merch-desc { font-size: 0.85rem; line-height: 1.7; color: var(--dim); margin-bottom: 20px; }
+.merch-footer { display: flex; justify-content: space-between; align-items: center; }
+.merch-price { font-family: 'Cinzel Decorative', serif; font-size: 1.4rem; color: var(--crimson); }
+.merch-btn { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; padding: 10px 20px; background: var(--blood); color: var(--light); border: 1px solid var(--crimson); cursor: pointer; transition: all 0.3s; }
+.merch-btn:hover { background: var(--crimson); box-shadow: 0 0 20px rgba(192,57,43,0.4); }

@@ -1,0 +1,19 @@
+
+.filter-row { display: flex; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+.filter-btn { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase; padding: 8px 20px; background: transparent; color: var(--dim); border: 1px solid #2a2a2a; cursor: pointer; transition: all 0.3s; }
+.filter-btn:hover, .filter-btn.active { border-color: var(--blood); color: var(--light); background: rgba(139,0,0,0.1); }
+.fight-card { color:unset;text-decoration: none;background: var(--smoke); border: 1px solid rgba(139,0,0,0.1); padding: 22px 28px; margin-bottom: 3px; display: grid; grid-template-columns: 40px 1fr auto auto; gap: 20px; align-items: center; transition: all 0.3s; position: relative; overflow: hidden; }
+.fight-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--blood); transform: scaleY(0); transition: transform 0.3s; }
+.fight-card:hover { background: rgba(26,26,26,0.9); border-color: rgba(139,0,0,0.3); }
+.fight-card:hover::before { transform: scaleY(1); }
+.fight-card__num { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.2em; color: #333; }
+.fight-card__name { font-family: 'Cinzel', serif; font-size: 1rem; color: var(--light); margin-bottom: 4px; }
+.fight-card__event { font-size: 0.65rem; letter-spacing: 0.2em; color: var(--dim); }
+.badge { font-family: 'Cinzel Decorative', serif; font-size: 0.75rem; padding: 6px 20px; border-radius: 2px; letter-spacing: 0.1em; text-align: center; }
+.badge-w { background: rgb(153 255 137 / 66%); color: #205600; border: 1px solid #205600; }
+.badge-l { background: rgb(255 139 139 / 30%); color: rgb(0 0 0 / 30%); border: 1px solid rgb(0 0 0 / 30%); }
+.fight-card__det { text-align: right; }
+.fight-card__method { font-weight: 600; font-size: 0.9rem; color: #888; font-family: 'Rajdhani', sans-serif; }
+.fight-card__round { font-size: 0.65rem; letter-spacing: 0.2em; color: #555; margin-top: 3px; }
+.fights-summary { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-bottom: 50px; }
+@media (max-width: 768px) { .fight-card { grid-template-columns: 1fr auto; } .fight-card__num { display: none; } .fights-summary { grid-template-columns: repeat(2,1fr); } }

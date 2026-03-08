@@ -1,0 +1,18 @@
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1200px; padding: 0 5% 80px; margin: 0 auto; }
+.ci-item { margin-bottom: 32px; }
+.ci-label { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.45em; color: var(--blood); text-transform: uppercase; margin-bottom: 8px; }
+.ci-value { font-size: 1rem; color: var(--light); }
+.ci-sub { font-size: 0.8rem; color: var(--dim); margin-top: 3px; }
+.social-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
+.soc-link { font-family: 'Cinzel', serif; font-size: 0.55rem; letter-spacing: 0.35em; text-transform: uppercase; padding: 10px 16px; border: 1px solid #2a2a2a; color: var(--dim); cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block; }
+.soc-link:hover { border-color: var(--blood); color: var(--light); }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-label { font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.4em; color: var(--blood); text-transform: uppercase; }
+.form-input, .form-textarea { background: var(--smoke); border: 1px solid #2a2a2a; color: var(--light); padding: 14px 16px; font-family: 'Rajdhani', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.3s; resize: none; width: 100%; }
+.form-input:focus, .form-textarea:focus { border-color: var(--blood); }
+.form-textarea { min-height: 140px; }
+.form-submit { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase; padding: 16px 32px; background: var(--blood); color: var(--light); border: 1px solid var(--crimson); cursor: pointer; transition: all 0.3s; }
+.form-submit:hover:not(:disabled) { background: var(--crimson); box-shadow: 0 0 30px rgba(192,57,43,0.4); }
+.form-submit:disabled { opacity: 0.7; cursor: default; }
+.form-success { font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.3em; color: var(--blood); margin-top: 10px; }
+@media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
