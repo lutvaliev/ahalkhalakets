@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "lint": "eslint src"
   },
   "eslintConfig": { "extends": ["react-app"] },
