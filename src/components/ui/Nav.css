@@ -33,3 +33,58 @@
 .nav__links li button.active { color: var(--light); }
 .nav__links li button:hover::after,
 .nav__links li button.active::after { transform: scaleX(1); }
+
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 56px;
+  }
+
+  .nav__toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 0 6px 12px;
+  }
+
+  .nav__toggle span {
+    width: 18px;
+    height: 2px;
+    background: var(--light);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .nav__toggle.open span:nth-child(1) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .nav__toggle.open span:nth-child(2) {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .nav__links {
+    position: fixed;
+    inset: 56px 0 0;
+    background: rgba(5,5,5,0.98);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 24px;
+    gap: 18px;
+    display: none;
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+
+  .nav__links li button {
+    font-size: 0.8rem;
+  }
+}

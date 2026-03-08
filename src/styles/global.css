@@ -165,7 +165,3 @@ body::before {
 @keyframes arrowBounce { 0%,100% { transform: rotate(45deg) translateY(0); opacity: 1; } 50% { transform: rotate(45deg) translateY(5px); opacity: 0.4; } }
 @keyframes spinRing { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .nav__links { display: none; }
-}

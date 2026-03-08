@@ -19,9 +19,9 @@ const PROFILE = [
 export default function AboutPage() {
   return (
     <>
-      <div className='flex j-between a-center'>
+      <div className="about-hero">
         <PageHero eyebrow="The Story Behind The Fighter" title="AHAL" accent="KALAKETS" />
-        <img className='about-img' src={logo} alt="" />
+        <img className="about-img" src={logo} alt="Arman Tsarukyan emblem" />
       </div>
       <div className="about-grid">
         <div className="about-bio">
