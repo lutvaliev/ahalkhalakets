@@ -118,7 +118,7 @@ export default function HomePage({ navigate }) {
             <div className="oct-ring" style={{ inset: 40, borderStyle: 'dashed', animationDuration: '30s', opacity: 0.15 }} />
             <div className="oct-center">
               <ArmFlag />
-              <div style={{ marginTop: 16, fontFamily: "'Cinzel',serif", fontSize: '0.6rem', letterSpacing: '0.4em', color: 'var(--blood)', opacity: 0.8 }}>ARMENIA</div>
+              <div style={{ marginTop: 16, fontFamily: "'Cinzel',serif", fontSize: '0.6rem', letterSpacing: '0.4em', color: 'var(--blood)', opacity: 0.8 }}>GEORGIA</div>
               <EternitySVG />
             </div>
           </div>
