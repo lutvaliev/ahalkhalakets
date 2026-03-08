@@ -1,6 +1,5 @@
 import georgia from "./imgs/georgia.png";import arman1 from "./imgs/arman1.jpg";import arman2 from "./imgs/arman2.jpg";import arman3 from "./imgs/arman3.webp";import arman4 from "./imgs/arman4.webp";import arman5 from "./imgs/arman5.webp";import arman6 from "./imgs/arman6.webp";import arman7 from "./imgs/arman7.webp";import arman8 from "./imgs/arman8.webp";import arman9 from "./imgs/arman9.jpg";
-import partner from "./imgs/partner.png";
-import partner2 from "./imgs/partner2.svg";
+import partner from "./imgs/partner.png";import partner2 from "./imgs/partner2.svg";
 import partner3 from "./imgs/partner3.png";
 import partner4 from "./imgs/partner4.webp";
 import partner5 from "./imgs/partner5.png";
