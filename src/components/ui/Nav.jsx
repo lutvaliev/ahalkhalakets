@@ -22,9 +22,13 @@ export default function Nav({ current, navigate }) {
       <ul className="nav__links">
         {PAGES.map(([key, label]) => (
           <li key={key}>
-            <a className={current === key ? 'active' : ''} onClick={() => navigate(key)}>
+            <button
+              className={current === key ? 'active' : ''}
+              type="button"
+              onClick={() => navigate(key)}
+            >
               {label}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

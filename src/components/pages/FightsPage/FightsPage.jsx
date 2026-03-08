@@ -45,7 +45,13 @@ export default function FightsPage() {
 
         <Reveal>
           {filtered.map(f => (
-            <a href={f.link} key={f.n} className="fight-card" target="_blank">
+            <a
+              href={f.link}
+              key={f.n}
+              className="fight-card"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="fight-card__num">#{f.n}</div>
               <div>
                 <div className="fight-card__name">{f.opp}</div>

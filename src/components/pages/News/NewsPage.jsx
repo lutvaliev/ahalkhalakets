@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsPage.css';
 import { NEWS } from '../../../data';
 import news1 from "../../../imgs/news1.png"
-import { PageHero, Reveal, SiteFooter } from '../../ui/Shared';
+import { PageHero, SiteFooter } from '../../ui/Shared';
 
 export default function NewsPage() {
   return (

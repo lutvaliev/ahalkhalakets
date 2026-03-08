@@ -38,7 +38,11 @@ export default function ContactPage() {
               ))}
               <p className="section-label" style={{ marginTop: 36 }}>Follow The Armenian</p>
               <div className="social-links">
-                {SOCIALS.map(s => <a key={s} className="soc-link" href="#">{s}</a>)}
+                {SOCIALS.map(s => (
+                  <button key={s} className="soc-link" type="button">
+                    {s}
+                  </button>
+                ))}
               </div>
             </div>
           </Reveal>
