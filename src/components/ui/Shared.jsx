@@ -15,12 +15,19 @@ export const Reveal = ({ children, style, className = '' }) => {
 };
 
 /* Armenia Flag */
-export const ArmFlag = ({ small }) => (
+export const GeoFlag = ({ small }) => (
   <div className="flag-am" style={small ? { width: 30 } : {}}>
     <img src={georgia} alt="" />
   </div>
 );
 
+export const ArmFlag = ({ small }) => (
+  <div className="flag-am" style={small ? { width: 30 } : {}}>
+    <div className="flag-am__r" style={small ? { height: 7 } : {}} />
+    <div className="flag-am__b" style={small ? { height: 7 } : {}} />
+    <div className="flag-am__o" style={small ? { height: 7 } : {}} />
+  </div>
+);
 /* Page Hero */
 export const PageHero = ({ eyebrow, title, accent }) => (
   <div className="page-hero">

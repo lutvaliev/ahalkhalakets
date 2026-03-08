@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import './HomePage.css';
 import { FIGHTS } from '../../../data';
 import { ArmenianEmblem, EternitySVG, BatSVG } from '../../ui/SVGs';
-import { Reveal, ArmFlag, StatCard, FightRow, QuoteSection, SiteFooter } from '../../ui/Shared';
+import { Reveal, GeoFlag, StatCard, FightRow, QuoteSection, SiteFooter } from '../../ui/Shared';
 import PartnersPage from '../Partners/PartnersPage';
 import { useSmoke } from '../../../hooks';
 
@@ -117,7 +117,7 @@ export default function HomePage({ navigate }) {
             <div className="oct-ring" style={{ inset: 20, borderColor: 'var(--crimson)', animationDuration: '15s', animationDirection: 'reverse', opacity: 0.2 }} />
             <div className="oct-ring" style={{ inset: 40, borderStyle: 'dashed', animationDuration: '30s', opacity: 0.15 }} />
             <div className="oct-center">
-              <ArmFlag />
+              <GeoFlag />
               <div style={{ marginTop: 16, fontFamily: "'Cinzel',serif", fontSize: '0.6rem', letterSpacing: '0.4em', color: 'var(--blood)', opacity: 0.8 }}>GEORGIA</div>
               <EternitySVG />
             </div>
